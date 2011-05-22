@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               JSON-PP
-version:            2.27105
+version:            2.27200
 abstract:           JSON::XS compatible pure-Perl module.
 author:
     - Makamaka Hannyaharamitu, E<lt>makamaka[at]cpan.orgE<gt>
