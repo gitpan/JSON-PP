@@ -1,30 +1,16 @@
 Revision history for Perl extension JSON::PP.
 --------------------------------------------------------------------------
 
-JSON::PP was inculded in JSON distribution (CPAN module).
-It comes to be a perl core module in Perl 5.14.
-
-    [STEPS]
-
-    * release this module as JSON::PPdev.
-
-    * release other PP::* modules as JSON::PP::Compat*.
-
-    * JSON distribution will inculde yet another JSON::PP modules.
-      They are JSNO::backportPP. So JSON.pm should work as it did at all!
-
-    * remove JSON::PP and JSON::PP::* modules from JSON distribution
-       and release it as developer version.
-
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-    * release JSON distribution as stable version.
-
-    * rename JSON::PPdev into JSON::PP and release on CPAN.
-
-    * Perl 5.14.0 released. This module is a dual-life module. <<<< HERE
+JSON::PP had been inculded in JSON distribution (CPAN module).
+It was a perl core module in Perl 5.14.
 
 --------------------------------------------------------------------------
+
+2.27201  Wed Mar 13 13:22:33 2013
+    - occasionally failed in t/019_incr.t in Perl 5.17.6 or more
+        (because of hash iterator randomization)
+        reported and patched by demerphq
+        https://rt.cpan.org/Public/Bug/Display.html?id=83421
 
 2.27200  Sun May 22 12:17:51 2011
 	- fixed incr_parse docodeing string more correctly (rt#68032 by LCONS)
